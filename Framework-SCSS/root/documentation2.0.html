@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Starter Template</title>
+    <title>Documentation</title>
 <!--    CSS link-->
     <link rel="stylesheet" href="scss/main.css" />
 <!--    Google fonts link-->
@@ -31,12 +31,27 @@
           </ul>
         </div>
       </nav>
+      <div>
+          <div class="spaceAround">
+            <p class="subheading">MenuMaker</p>
+            <p class="subheading">Documentation</p>
+          </div>
+          <p class="fontMedium">How to use this document:</p>
+          <p class="fontSmall">Use this page as a reference. All available classes are used here. Copy and paste the class names into the class section of an element's opening tag.</p>
+          <div class="spaceAround">
+            <p class="fontSmall">Example Code:</p>
+            <code> &lt;p class="fontLobster fontMedium red"&gt;Hello World!&lt;/p&gt;</code>
+            <P class="fontSmall">Produces:</P>
+            <p class="fontMedium fontLobster red">Hello World!</p>
+            <p>If you can't figure out the class. Right click to select and use your browser's "Inspect" mode to target an element and view it's relevant classes.</p>
+          </div>
+      </div>
 
     </header>
 
     <div class="container">
             <div class="spaceAround center">
-                <p class="subheading uppercase underline">Font Sizes</p>
+                <p class="fontMedium uppercase underline">Font Sizes</p>
                 <div>
                     <p>Default Font Size</p>
                     <p class="heading">Heading</p>
@@ -50,7 +65,7 @@
             </div>
             <hr>
             <div class="spaceAround fontMedium center">
-                <p class="subheading uppercase underline">Font Families</p>
+                <p class="fontMedium uppercase underline">Font Families</p>
                 <div>
                     <p>Default Font Family</p>
                     <p class="fontMeddon">fontMeddon</p>
@@ -66,7 +81,7 @@
                 </div>
             </div>
             <div class="spaceAround fontSmall center">
-                <p class="subheading uppercase underline">Font Decorations</p>
+                <p class="fontMedium uppercase underline">Font Decorations</p>
                 <div>
                     <p class="capitalize">Use class="capitalize" to capitalize the first letter of each word.</p>
                     <p class="uppercase">Use class="uppercase" to capitalize every letter.</p>
@@ -78,7 +93,7 @@
             </div>
             <hr>
             <div class="spaceAround fontMedium center">
-                <p class="subheading uppercase underline">Colors</p>
+                <p class="fontMedium uppercase underline">Colors</p>
                 <div>
                     <p>Default Font Color</p>
                     <p class="black">Black</p>
@@ -93,7 +108,7 @@
             </div>
             <hr>
             <div class="spaceAround fontMedium center">
-                <p class="subheading uppercase">Background Colors</p>
+                <p class="fontMedium uppercase">Background Colors</p>
                 <div>
                     <p>Default Background Color</p>
                     <p class="bgBlack">bgBlack</p>
@@ -108,7 +123,7 @@
                 </div>
             </div>
             <hr>
-            <p class="subheading">Images</p>
+            <p class="fontMedium">Images</p>
             <img class="image-responsive" src="images/example1.jpeg" alt="example 1" />
             <hr>
             <p>This is a table with class="bordered"</p>
@@ -272,7 +287,7 @@
             </div>
         
             <div class="center">
-                <p class="subheading">Buttons</p>
+                <p class="fontMedium">Buttons</p>
                 <p class="fontMedium">How to Use Buttons</p>
                 <ul class="fontSmall">
                     <li>Add class "button" to the element.</li>
@@ -323,6 +338,8 @@
                 </div>
             </div>
     </div>
+
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
     <footer class="social">
     <a class="icon" href="https://www.facebook.com">

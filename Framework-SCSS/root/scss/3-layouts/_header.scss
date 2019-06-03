@@ -14,12 +14,13 @@
 
 header {
 	width: 100%;
-	height: 100vh;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent), url("images/hero.jpeg") bottom no-repeat;
+	// height: 100vh;
+	// background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent), url("images/hero.jpeg") bottom no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	position: relative;
+	overflow-wrap: break-word;
 }
 /* So you could use left|right|top|bottom to move element around the page*/

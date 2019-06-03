@@ -33,17 +33,21 @@
       </nav>
       <div>
           <div class="spaceAround">
-            <p class="subheading">MenuMaker</p>
-            <p class="subheading">Documentation</p>
+            <p class="heading">MenuMaker</p>
+            <p class="heading">Documentation</p>
           </div>
           <p class="fontMedium">How to use this document:</p>
-          <p class="fontSmall">Use this page as a reference. All available classes are used here. Copy and paste the class names into the class section of an element's opening tag.</p>
+          <p>Use this page as a reference. All available classes are used here. Copy and paste the class names into the class section of an element's opening tag.</p>
           <div class="spaceAround">
-            <p class="fontSmall">Example Code:</p>
-            <code> &lt;p class="fontLobster fontMedium red"&gt;Hello World!&lt;/p&gt;</code>
-            <P class="fontSmall">Produces:</P>
+            <p>Example Code:</p>
+            <div class="description">
+                <code>
+                    <p>&lt;p class="fontLobster fontMedium red"&gt;Hello World!&lt;/p&gt;</p>
+                </code>
+            </div>
+            <P>Results:</P>
             <p class="fontMedium fontLobster red">Hello World!</p>
-            <p>If you can't figure out the class. Right click to select and use your browser's "Inspect" mode to target an element and view it's relevant classes.</p>
+            <p class="italics">If you can't figure out the class. Right click to select and use your browser's "Inspect" mode to target an element and view it's relevant classes.</p>
           </div>
       </div>
 
@@ -64,7 +68,7 @@
                 </div>
             </div>
             <hr>
-            <div class="spaceAround fontMedium center">
+            <div class="spaceAround center">
                 <p class="fontMedium uppercase underline">Font Families</p>
                 <div>
                     <p>Default Font Family</p>
@@ -80,7 +84,7 @@
                     <p class="fontOpenSans">fontOpenSans</p>
                 </div>
             </div>
-            <div class="spaceAround fontSmall center">
+            <div class="spaceAround center">
                 <p class="fontMedium uppercase underline">Font Decorations</p>
                 <div>
                     <p class="capitalize">Use class="capitalize" to capitalize the first letter of each word.</p>
@@ -92,7 +96,7 @@
                 </div>
             </div>
             <hr>
-            <div class="spaceAround fontMedium center">
+            <div class="spaceAround center">
                 <p class="fontMedium uppercase underline">Colors</p>
                 <div>
                     <p>Default Font Color</p>
@@ -107,8 +111,8 @@
                 </div>
             </div>
             <hr>
-            <div class="spaceAround fontMedium center">
-                <p class="fontMedium uppercase">Background Colors</p>
+            <div class="spaceAround center">
+                <p class="fontMedium uppercase underline">Background Colors</p>
                 <div>
                     <p>Default Background Color</p>
                     <p class="bgBlack">bgBlack</p>
@@ -122,111 +126,138 @@
                     <p class="bgRed">bgRed</p>
                 </div>
             </div>
+
             <hr>
-            <p class="fontMedium">Images</p>
-            <img class="image-responsive" src="images/example1.jpeg" alt="example 1" />
+
+            <div class="spaceAround center">
+                <p class="fontMedium uppercase underline">Images</p>
+                <p class="fontMedium">How to insert images</p>
+                <p class="fontSmall">Use the image tag correctly. And add the class "image-responsive" if you want it to be resize with the browser window.</p>
+                <p>Example Code:</p>
+                <div class="description spaceAround">
+                    <code>
+                        <p>&lt;img class="image-responsive src="images/example1.jpeg" alt="example 1" /&gt;</p>
+                    </code>
+                </div>
+                <p>Results:</p>
+                <P>This is an image the resizes as you resize the page. Try it!</P>
+                <img class="image-responsive" src="images/example1.jpeg" alt="example 1" />
+                <p>This image is not responsive.</p>
+                <img src="images/example1.jpeg" alt="example 1" />
+            </div>
+
             <hr>
-            <p>This is a table with class="bordered"</p>
-            <table class="bordered fontSmall">
-              <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-              </tr>
-              <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-              </tr>
-              <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-              </tr>
-              <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-              </tr>
-              <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-              </tr>
-              <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-              </tr>
-              <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
-              </tr>
-            </table>
+            <div class="center">
+                <p class="fontMedium uppercase underline">Tables</p>
+                <p class="fontSmall">This is a table that uses the "bordered" class:</p>
+                <table class="bordered fontSmall">
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+                </table>
+
+                <br/>
+
+                <p class="fontSmall">This is a table that uses the "striped" class:</p>
+                <table class="striped fontSmall">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                </tr>
+                </table>
+                
+                <br/>
+
+                <p class="fontSmall">This is a table with the "responsive" class:</p>
+                <table class="responsive fontSmall">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                </tr>
+                </table>
+            </div>
+
             <hr>
-            <br />
-            <p>This is a table with class="striped"</p>
-            <table class="striped fontSmall">
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Points</th>
-              </tr>
-              <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
-                <td>$100</td>
-              </tr>
-              <tr>
-                <td>Lois</td>
-                <td>Griffin</td>
-                <td>$150</td>
-              </tr>
-              <tr>
-                <td>Joe</td>
-                <td>Swanson</td>
-                <td>$300</td>
-              </tr>
-              <tr>
-                <td>Cleveland</td>
-                <td>Brown</td>
-                <td>$250</td>
-              </tr>
-            </table>
-            <hr>
-            <br />
-            <p>This is a table with class="responsive"</p>
-            <table class="responsive fontSmall">
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Points</th>
-              </tr>
-              <tr>
-                <td>Peter</td>
-                <td>Griffin</td>
-                <td>$100</td>
-              </tr>
-              <tr>
-                <td>Lois</td>
-                <td>Griffin</td>
-                <td>$150</td>
-              </tr>
-              <tr>
-                <td>Joe</td>
-                <td>Swanson</td>
-                <td>$300</td>
-              </tr>
-              <tr>
-                <td>Cleveland</td>
-                <td>Brown</td>
-                <td>$250</td>
-              </tr>
-            </table>
-            <hr>
-            <br />
-            <p>This is a form.</p>
+            <br/>
+
+            <div class="center">
+            <p class="fontMedium uppercase underline">Forms</p>
+            <p class="fontSmall">This is a form.</p>
+            <p>To use forms:</p>
             <div class="container fontSmall">
               <form action="/action_page.php">
                 <div class="row">
@@ -268,6 +299,25 @@
                   </div>
                 </div>
                 <div class="row">
+                    <div class="col-25">
+                        <label for="country">Diet</label>
+                    </div>
+                    <div class="col-75">
+                        <div>
+                            <input type="radio" id="r1" name="choices" value="meat">
+                            <label for="r1"> Meat Lover</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="r2" name="choices" value="veggie">
+                            <label for="r2"> Vegetarian</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="r3" name="choices" value="steak">
+                            <label for="r3"> Fish</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                   <div class="col-25">
                     <label for="subject">Subject</label>
                   </div>
@@ -281,10 +331,27 @@
                   </div>
                 </div>
                 <div class="row">
+                  <div class="col-25">
+                    <label for="newsletter">Check to Receive:</label>
+                  </div>
+                  <div class="col-75">
+                      <input type="checkbox" id="c1" name="newsletter">
+                      <label for="newsletter">Newsletter</label>
+                    
+                      <input type="checkbox" id="c1" name="menus">
+                      <label for="menus">Example Menus</label>
+                    
+                      <input type="checkbox" id="c1" name="info">
+                      <label for="info">More Information</label>
+                  </div>
+
+                </div>
+                <div class="row">
                   <input type="submit" value="Submit" />
                 </div>
               </form>
             </div>
+        </div>
         
             <div class="center">
                 <p class="fontMedium">Buttons</p>
@@ -329,58 +396,100 @@
                     <br />
                     <button class="button active">I'm an active button</button>
                     <br />
-                    <input type="button" value="Button" />
+                    <!-- <input type="button" value="Button" />
                     <br />
                     <input type="reset" value="Reset" />
                     <br />
                     <input type="submit" value="Submit" />
-                    <br />
+                    <br /> -->
                 </div>
             </div>
     </div>
 
+    <div class="flexWrapper responsive">
+	
+            <section>
+            <h1>Flexy grid</h1>
+            <div class="gridHorizontal">
+              <div class="gridFull column">
+                Header
+              </div>
+            </div>
+            
+            <div class="gridHorizontal">
+              <div class="column gridHalf">
+                Section
+              </div>
+              <div class="column gridHalf">
+                Section
+              </div>
+            </div>
+            
+            <div class="gridHorizontal">
+              <div class="column gridThird">
+                Article
+              </div>
+              <div class="column gridThird">
+                Article
+              </div>
+              <div class="column gridThird">
+                Article
+              </div>
+            </div>
+            
+            <div class="gridHorizontal">
+              <div class="column gridThird">
+                Section
+              </div>
+            
+              <div class="column gridHalf">
+                Aside
+              </div>
+            </div>
+            
+            <div class="gridHorizontal">
+              <div class="column gridFull">
+                Footer
+              </div>
+            </div>
+            </section>
+            
+            </div>
+
     <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/example1.jpeg" alt="example 1">
+            </div>
+            <div class="flip-card-back">
+                <p>Food Food Food</p>
+            </div>
+        </div>
+    </div>
+
     <footer class="social">
-    <a class="icon" href="https://www.facebook.com">
+        <a class="icon" href="https://www.facebook.com" target="_blank">
             <i class="fab fa-facebook-square"></i>
         </a>
-        <a class="icon" href="https://twitter.com/">
+        <a class="icon" href="https://twitter.com/" target="_blank">
             <i class="fab fa-twitter-square"></i>
         </a>
-        <a class="icon" href="https://www.instagram.com/">
+        <a class="icon" href="https://www.instagram.com/" target="_blank">
             <i class="fab fa-instagram"></i>
         </a>
-       <a class="icon" href="https://www.yelp.com/">
+        <a class="icon" href="https://www.yelp.com/" target="_blank">
             <i class="fab fa-yelp"></i>
         </a>
-       <a class="icon" href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a><br><br>
-     <div class="copyright">
-    <p class='fontXSmall'>&copy;MenuMaker 2019</p>
-    </div>
+        <a class="icon" href="https://www.youtube.com/" target="_blank">
+          <i class="fab fa-youtube-square"></i>
+        </a>
+        <br><br>
+        <div class="copyright">
+            <p class='fontXSmall'>&copy;MenuMaker 2019</p>
+        </div>
     
-       
-<!-- USE THESE IF YOU WANT
-      <div>
-        <h4>Locations</h4>
-        <div class="location">
-          <h5>
-            500 Lemonade Rd <br />
-            Manhattan, NY - 11111
-          </h5>
-        </div>
-      </div>
-
-      <div>
-        <h4>Hours</h4>
-        <div class="days">
-          <h5>
-            Monday - Saturday <br />
-            10:30am - 8:00pm
-          </h5>
-        </div>
-      </div>
--->
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

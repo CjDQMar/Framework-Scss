@@ -22,3 +22,14 @@ blockquote,
 li {
 	display: inline;
 }
+
+.description {
+	background-color: #fff;
+	padding: .5em;
+	box-shadow: -1px -1px 4px #000;
+	border-radius: 3px;
+	display:flex;
+	flex-direction: column;
+	max-width: 960px;
+	margin: 0 auto;
+}

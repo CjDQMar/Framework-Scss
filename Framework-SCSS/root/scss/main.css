@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Meddon|Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Pacifico|Sorts+Mill+Goudy&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 * {
   margin: 0;
   padding: 0;
@@ -128,40 +129,37 @@ body {
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.1rem;
+  margin: .25rem;
 }
 
 .heading {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
 .subheading {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .fontXSmall {
-  font-size: 1em;
+  font-size: .6rem;
 }
 
 .fontSmall {
-  font-size: 1.6em;
+  font-size: .8rem;
 }
 
 .fontMedium {
-  font-size: 2.4em;
+  font-size: 2.2rem;
 }
 
 .fontLarge {
-  font-size: 3.6em;
+  font-size: 3.2rem;
 }
 
 .fontXLarge {
-  font-size: 6em;
-}
-
-.fontXXLarge {
-  font-size: 10em;
+  font-size: 4rem;
 }
 
 .fontResponsive {
@@ -264,6 +262,23 @@ li {
   display: inline;
 }
 
+.description {
+  background-color: #fff;
+  padding: .5em;
+  -webkit-box-shadow: -1px -1px 4px #000;
+          box-shadow: -1px -1px 4px #000;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -353,6 +368,10 @@ table.responsive {
   width: 100%;
 }
 
+form {
+  max-width: 600px;
+}
+
 input[type=text], select, textarea {
   width: 90%;
   padding: 12px;
@@ -385,6 +404,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   overflow-wrap: break-word;
+  overflow: hidden;
 }
 
 .col-25 {
@@ -727,6 +747,100 @@ footer a {
   }
 }
 
+.flexWrapper {
+  font-family: sans-serif;
+  font-size: 1.3em;
+  color: grey;
+  background: transparent;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.column {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  color: #fff;
+  margin: 5px 0;
+  background: deeppink;
+}
+
+main, section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.responsive {
+  width: 100%;
+}
+
+.responsiveImage {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.responsiveGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gridFull {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.gridHalf {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.gridThird {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.gridFourth {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.gridHorizontal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.gridVertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .gridHorizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 img.rightside {
   float: right;
   width: 40%;
@@ -999,5 +1113,160 @@ img.rightside {
   border: none;
   cursor: pointer;
   display: none;
+}
+
+.flexbox {
+  background: linear-gradient(155deg, #55c7ed, #2bb3e0, #3bc1ed);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search {
+  margin: 20px;
+}
+
+.search h1 {
+  font-size: 4rem;
+}
+
+.search > h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.search > h1,
+.search > h3 {
+  margin-bottom: 15px;
+  text-shadow: 0 1px #0091c2;
+}
+
+.search > div {
+  display: inline-block;
+  position: relative;
+}
+
+.search > div:after {
+  content: "";
+  background: white;
+  width: 4px;
+  height: 15px;
+  border-radius: 30px;
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+}
+
+.search > div > input {
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 1px #0091c2;
+          box-shadow: 0 1px #0091c2;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.search > div > input::-webkit-input-placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+
+.search > div > input:-ms-input-placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+
+.search > div > input::-ms-input-placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+
+.search > div > input::placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+
+.search > div > input::-ms-placeholder {
+  color: #efefef;
+}
+
+.search > div > input::-ms-input-placeholder {
+  color: #efefef;
+}
+
+.search > div > input:focus,
+.search > div > input:valid {
+  width: 250px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-front > img {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 /*# sourceMappingURL=main.css.map */

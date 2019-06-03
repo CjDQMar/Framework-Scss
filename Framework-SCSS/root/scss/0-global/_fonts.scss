@@ -46,39 +46,36 @@
 // Font Sizes
 
 p {
-	font-size: 1.4em;
+	font-size: 1.1rem;
+	margin: .25rem;
 }
 
 .heading {
-	font-size: 3rem;
+	font-size: 2.4rem;
 	font-weight: bold;
 }
 
 .subheading {
-	font-size: 2.2rem;
+	font-size: 2rem;
 }
 .fontXSmall {
-	font-size: 1em;
+	font-size: .6rem;
 }
 
 .fontSmall {
-	font-size: 1.6em;
+	font-size: .8rem;
 }
 
 .fontMedium {
-	font-size: 2.4em;
+	font-size: 2.2rem;
 }
 
 .fontLarge {
-	font-size: 3.6em;
+	font-size: 3.2rem;
 }
 
 .fontXLarge {
-	font-size: 6em;
-}
-
-.fontXXLarge {
-	font-size: 10em;
+	font-size: 4rem;
 }
 .fontResponsive {
 	font-size: 10vw;

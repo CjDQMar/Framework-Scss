@@ -145,7 +145,7 @@ p {
 }
 
 .fontSmall {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 .fontMedium {
@@ -237,7 +237,7 @@ p {
 }
 
 body {
-  background: #bfdbf0;
+  background: #eee;
   color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
@@ -327,16 +327,16 @@ img.image-responsive {
   text-decoration: underline;
 }
 
-table.stripped {
+table.striped {
   border-collapse: collapse;
 }
 
-table.stripped th, table.stripped td {
+table.striped th, table.striped td {
   text-align: left;
   padding: 8px;
 }
 
-table.stripped tr:nth-child(even) {
+table.striped tr:nth-child(even) {
   background-color: #0142a8;
   color: #fff;
 }
@@ -410,7 +410,7 @@ input[type=submit]:hover {
   border-radius: 12px;
   margin: 4px 2px;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .button:hover {
@@ -689,7 +689,7 @@ footer {
       flex-wrap: wrap;
   text-align: center;
   background-color: #ccc;
-  padding: 5rem 0;
+  padding: .5rem 0;
   font-size: 1.8rem;
   color: #000;
 }

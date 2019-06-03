@@ -1,7 +1,7 @@
 // COLORS
 
 .red {
-	color: red;
+	color: crimson;
 }
 
 .black {
@@ -12,22 +12,55 @@
 	color: white;
 }
 
+.gray {
+	color: gray;
+}
 .blue {
-	color: blue;
+	color: powderblue;
 }
 
 .yellow {
-	color: yellow;
+	color: gold;
 }
 
 .green {
-	color: green;
+	color: lightgreen;
 }
 
 .purple {
-	color: purple;
+	color: blueviolet;
 }
 
 .pink {
-	color: pink;
+	color: lightcoral;
+}
+
+// Background Colors
+
+.bgBlack {
+	background-color: black;
+}
+.bgWhite {
+	background-color: white;
+}
+.bgGray {
+	background-color: gray;
+}
+.bgRed {
+	background-color:crimson;
+}
+.bgBlue {
+	background-color: powderblue;
+}
+.bgYellow {
+	background-color: gold;
+}
+.bgGreen {
+	background-color: lightgreen;
+}
+.bgPurple {
+	background-color: blueviolet;
+}
+.bgPink {
+	background-color: lightcoral;
 }

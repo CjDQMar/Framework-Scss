@@ -1,0 +1,73 @@
+// .grid-container {
+//     display: grid;
+//     grid-gap: 1em;
+// 	@include mobile {
+//         grid-template-columns: repeat (1, 1fr);
+// 	}
+// }
+    // @include tablet
+    //     grid-template-columns: repeat(2, 1fr)
+    // @include desktop
+    //     grid-template-columns: repeat(3, 1fr)
+    // @include widescreen
+    //     grid-template-columns: repeat(4, 1fr)
+
+.gridWrapper {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 30px;
+}
+
+.gridWrapper div{
+    width: auto;
+    height: 5rem;
+}
+
+.grid{
+    font-size: 2rem;
+    width: auto;
+}
+
+div .grid{
+    background: #ccc;
+    border: 1px solid black;
+}
+
+
+// .title {
+//     background: deeppink;
+// }
+// .title2{
+//     background: orange;
+// }
+
+// .sidebar{
+//     background: greenyellow;
+// }
+
+// .sidebar2{
+//     background: #e694f7;
+// }
+
+// .content{
+//     background: yellow;
+// }
+
+// .content2{
+//     background: plum;
+// }
+
+// .content4{
+//     background: green;
+// }
+
+// .content5{
+//     background: blue;
+// }
+// .content3, .content6{
+//     background: pink;
+// }
+
+

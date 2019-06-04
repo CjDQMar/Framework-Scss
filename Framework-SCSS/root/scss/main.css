@@ -502,6 +502,15 @@ input[type=submit]:hover {
 }
 
 .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  max-width: 960px;
+}
+
+.container-medium {
   background-color: #f2f2f2;
   overflow-wrap: break-word;
   overflow: hidden;
@@ -913,9 +922,9 @@ h2 {
 }
 
 .gridFourth {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 
 .gridHorizontal {
@@ -947,27 +956,27 @@ h2 {
 }
 
 .background-image1 {
-  background: url(../../images/cafe-3537801_1280.jpg) no-repeat;
+  background: url(./../images/cafe-3537801_1280.jpg) no-repeat;
   background-size: cover;
 }
 
 .background-image2 {
-  background: url(../../images/bg_bar_in.jpg) no-repeat;
+  background: url(./../images/bg_bar_in.jpg) no-repeat;
   background-size: cover;
 }
 
 .background-image3 {
-  background: url(../../images/brick-wall-1834784_1280.jpg) no-repeat;
+  background: url(./../images/brick-wall-1834784_1280.jpg) no-repeat;
   background-size: cover;
 }
 
 .background-image4 {
-  background: url(../../images/bar-918541_1280.jpg) no-repeat;
+  background: url(./../images/bar-918541_1280.jpg) no-repeat;
   background-size: cover;
 }
 
 .background-image-fixed {
-  background: url(../../images/bg_dark.jpg) fixed;
+  background: url(./../images/bg_dark.jpg) fixed;
   background-size: cover;
 }
 
@@ -1045,6 +1054,10 @@ img.rightside {
 .logoLarge {
   width: 50%;
   max-width: 200px;
+}
+
+.logoSmall {
+  width: 50px;
 }
 
 .nav {
@@ -1256,8 +1269,6 @@ img.rightside {
   font-size: 22px;
   width: 30px;
   height: 30px;
-  background: #e74c3c;
-  color: white;
   border: none;
   cursor: pointer;
   display: none;

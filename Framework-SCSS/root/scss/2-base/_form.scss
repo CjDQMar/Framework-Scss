@@ -30,9 +30,15 @@ input[type=submit]:hover {
 }
 
 .container {
-	// border-radius: 5px;
+	border-radius: 5px;
 	background-color: #f2f2f2;
-	// padding: 20px;
+	padding: 20px;
+	overflow-wrap: break-word;
+	overflow: hidden;
+	max-width: 960px;
+}
+.container-medium {
+	background-color: #f2f2f2;
 	overflow-wrap: break-word;
 	overflow: hidden;
 	max-width: 960px;

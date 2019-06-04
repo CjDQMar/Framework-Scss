@@ -28,7 +28,7 @@
 }
 
 .purple {
-	color: blueviolet;
+	color: slateblue;
 }
 
 .pink {
@@ -46,6 +46,9 @@
 .bgGray {
 	background-color: gray;
 }
+.bgLightGray {
+	background-color: $lightGray;
+}
 .bgRed {
 	background-color:crimson;
 }
@@ -59,7 +62,7 @@
 	background-color: lightgreen;
 }
 .bgPurple {
-	background-color: blueviolet;
+	background-color: slateblue;
 }
 .bgPink {
 	background-color: lightcoral;

@@ -86,7 +86,10 @@
 
 .nav .overlay ul li a {
 	display: block;
-	font-size: 2rem;
+	font-size: 3em;
+	color: white;
+	text-decoration: none;
+	font-weight: lighter;
 	transition: all 650ms;
 }
 
@@ -110,7 +113,7 @@
 
 .nav .overlay ul li a:hover,
 .nav .overlay ul li a .active:hover {
-	color: black;
+	color: lightsalmon;
 }
 
 @media (min-width: 769px) {
@@ -121,7 +124,7 @@
 	}
 	.nav {
 		display: flex;
-		padding: .25rem 4rem 0;
+		padding: .25rem 2rem 0;
 		justify-content: space-between;
 		line-height: 1;
 		background-color: black;
@@ -135,11 +138,12 @@
 				list-style: none;
 				margin-top: 2px;
 				li {
+					text-transform: none;
 					a {
-						font-size: 1.5rem;
+						font-size: .9rem;
 						letter-spacing: 1px;
 						margin-right: -1px;
-						padding: 0 1em;
+						padding: .5rem .8rem;
 						color: white;
 					}
 				}
@@ -198,4 +202,10 @@
       opacity: 1;
     }
   }
+}
+
+@media (min-width: 900px) {
+	.nav .overlay ul li a {
+		font-size: 1.1rem;
+	}
 }

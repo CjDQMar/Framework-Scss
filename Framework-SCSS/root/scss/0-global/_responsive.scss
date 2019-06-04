@@ -9,14 +9,34 @@
 }
 
 .spaceAround {
-	margin: 2rem;
+	margin: 2rem .5rem;
+}
+.spaceVertical {
+	margin:2rem 0;
+}
+.spaceHorizontal {
+	margin: 0 2rem;
 }
 .spaceInside {
 	padding: 2rem;
 }
-.center {
+.spaceInsideVertical {
+	padding: 2rem 0;
+}
+.spaceInsideHorizontal {
+	padding: 0 2rem;
+}
+
+.centerText {
 	text-align: center;
 }
+.centerObject {
+	margin: 0 auto;
+}
+.maxText {
+	max-width: 560px;
+}
+
 
 .responsiveGrid {
 	display: flex;

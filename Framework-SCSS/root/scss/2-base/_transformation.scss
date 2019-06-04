@@ -20,3 +20,15 @@
 .underline {
 	text-decoration: underline;
 }
+.border {
+	border: solid 1px #000;
+}
+.grayScale {
+	filter: grayscale(100%);
+}
+.grayHalf {
+	filter: grayscale(50%);
+}
+.seeThrough {
+	opacity: .5;
+}

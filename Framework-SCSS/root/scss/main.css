@@ -33,15 +33,39 @@ body {
 }
 
 .spaceAround {
-  margin: 2rem;
+  margin: 2rem .5rem;
+}
+
+.spaceVertical {
+  margin: 2rem 0;
+}
+
+.spaceHorizontal {
+  margin: 0 2rem;
 }
 
 .spaceInside {
   padding: 2rem;
 }
 
-.center {
+.spaceInsideVertical {
+  padding: 2rem 0;
+}
+
+.spaceInsideHorizontal {
+  padding: 0 2rem;
+}
+
+.centerText {
   text-align: center;
+}
+
+.centerObject {
+  margin: 0 auto;
+}
+
+.maxText {
+  max-width: 560px;
 }
 
 .responsiveGrid {
@@ -130,40 +154,61 @@ body {
 
 p {
   font-size: 1.1rem;
-  margin: .25rem;
+  padding: .25rem;
 }
 
 .heading {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .subheading {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .fontXSmall {
-  font-size: .6rem;
+  font-size: .7rem;
 }
 
 .fontSmall {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .fontMedium {
-  font-size: 2.2rem;
+  font-size: 1.4rem;
 }
 
 .fontLarge {
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 
 .fontXLarge {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .fontResponsive {
   font-size: 10vw;
+}
+
+@media (min-width: 365px) {
+  .heading {
+    font-size: 2.4rem;
+  }
+  .subheading {
+    font-size: 2rem;
+  }
+  .fontLarge {
+    font-size: 3rem;
+  }
+  .fontXLarge {
+    font-size: 3.1rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .fontXLarge {
+    font-size: 3.4rem;
+  }
 }
 
 .red {
@@ -195,7 +240,7 @@ p {
 }
 
 .purple {
-  color: blueviolet;
+  color: slateblue;
 }
 
 .pink {
@@ -212,6 +257,10 @@ p {
 
 .bgGray {
   background-color: gray;
+}
+
+.bgLightGray {
+  background-color: #e2e1e1;
 }
 
 .bgRed {
@@ -231,7 +280,7 @@ p {
 }
 
 .bgPurple {
-  background-color: blueviolet;
+  background-color: slateblue;
 }
 
 .bgPink {
@@ -239,7 +288,7 @@ p {
 }
 
 body {
-  background: #eee;
+  background: #e2e1e1;
   color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
@@ -265,6 +314,7 @@ li {
 .description {
   background-color: #fff;
   padding: .5em;
+  margin: 1em auto;
   -webkit-box-shadow: -1px -1px 4px #000;
           box-shadow: -1px -1px 4px #000;
   border-radius: 3px;
@@ -275,8 +325,9 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 600px;
+  max-height: 66px;
+  overflow-y: scroll;
 }
 
 h1,
@@ -346,6 +397,24 @@ img.image-responsive {
   text-decoration: underline;
 }
 
+.border {
+  border: solid 1px #000;
+}
+
+.grayScale {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.grayHalf {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.seeThrough {
+  opacity: .5;
+}
+
 table.striped {
   border-collapse: collapse;
 }
@@ -405,6 +474,7 @@ input[type=submit]:hover {
   padding: 20px;
   overflow-wrap: break-word;
   overflow: hidden;
+  max-width: 960px;
 }
 
 .col-25 {
@@ -432,7 +502,7 @@ input[type=submit]:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 12px;
+  border-radius: 10px;
   margin: 4px 2px;
   cursor: pointer;
   font-size: 1em;
@@ -808,9 +878,9 @@ h2 {
 }
 
 .gridFourth {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .gridHorizontal {
@@ -942,7 +1012,10 @@ img.rightside {
 
 .nav .overlay ul li a {
   display: block;
-  font-size: 2rem;
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
   -webkit-transition: all 650ms;
   transition: all 650ms;
 }
@@ -970,7 +1043,7 @@ img.rightside {
 
 .nav .overlay ul li a:hover,
 .nav .overlay ul li a .active:hover {
-  color: black;
+  color: lightsalmon;
 }
 
 @media (min-width: 769px) {
@@ -981,7 +1054,7 @@ img.rightside {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: .25rem 4rem 0;
+    padding: .25rem 2rem 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1003,11 +1076,14 @@ img.rightside {
     list-style: none;
     margin-top: 2px;
   }
+  .nav .overlay ul li {
+    text-transform: none;
+  }
   .nav .overlay ul li a {
-    font-size: 1.5rem;
+    font-size: .9rem;
     letter-spacing: 1px;
     margin-right: -1px;
-    padding: 0 1em;
+    padding: .5rem .8rem;
     color: white;
   }
   #logo {
@@ -1098,6 +1174,12 @@ img.rightside {
     100% {
       opacity: 1;
     }
+  }
+}
+
+@media (min-width: 900px) {
+  .nav .overlay ul li a {
+    font-size: 1.1rem;
   }
 }
 

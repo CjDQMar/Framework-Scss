@@ -31,7 +31,8 @@
 	text-align: center;
 }
 .centerObject {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 .maxText {
 	max-width: 560px;
@@ -64,4 +65,11 @@
 
 .gridVertical {
 	flex-direction: column;
+}
+
+.split {
+	justify-content: space-between;
+}
+.split2 {
+	justify-content: space-around;
 }

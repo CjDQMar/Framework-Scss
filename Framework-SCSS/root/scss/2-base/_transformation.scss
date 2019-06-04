@@ -30,5 +30,14 @@
 	filter: grayscale(50%);
 }
 .seeThrough {
-	opacity: .5;
+	opacity: .8;
+}
+.seeThroughMore {
+	opacity: .6;
+}
+.fontShadow {
+	text-shadow: .2rem .2rem .5rem #000;
+}
+.boxShadow {
+	box-shadow: .2rem .2rem .2rem #000;
 }

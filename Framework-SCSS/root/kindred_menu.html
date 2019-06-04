@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Documentation</title>
+    <title>Kindred - Menu</title>
 <!-- CSS link -->
     <link rel="stylesheet" href="scss/main.css" />
+    <link rel="icon" href="images/logo_kindred_optimized.png">
 <!-- GoogleFonts link -->
      <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
@@ -16,22 +17,24 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="home">
+    <header id="home" class="background-image4 container centerObject">
       <div class="menu">
         <span class="bar"></span>
       </div>
 
       <!-- Logo & Nav -->
       <nav class="nav">
-        <a href="index.html" id="logo">Logo</a>
+        <a href="kindred_home.html" id="logo">
+          <img src="images/logo_kindred.png" alt="menuMaker logo" style="width:50px;">
+        </a>
         <div class="overlay">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#fonts">Fonts</a></li>
-            <li><a href="#colors">Colors</a></li>
-            <li><a href="#images">Images</a></li>
-            <li><a href="#tables">Tables and Grids</a></li>
-            <li><a href="#forms">Forms and Buttons</a></li>
+            <li><a href="kindred_home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="kindred_menu.html">Menu</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="index.html">MenuMaker</a></li>
           </ul>
         </div>
       </nav>
@@ -39,102 +42,65 @@
 
       <!-- Title -->
       <div class="spaceAround">
-        <p class="heading">MenuMaker</p>
-        <p class="heading">Documentation</p>
+        <p class="fontXLarge fontLobster fontShadow white">Kindred</p>
+        <p class="subheading white fontSpecialElite seeThrough fontShadow">good drinks. good eats.</p>
       </div>
       <!-- End of Title -->
+      <!-- Buttons -->
+      <div class="responsiveGrid split2 spaceVertical">
+        <button class="button buttonLight seeThrough boxShadow">
+            <p class="fontMedium fontMillGoudy">Reserve</p>
+        </button>
+        <button class="button buttonLight seeThrough boxShadow">
+            <p class="fontMedium fontMillGoudy">Menu</p>
+        </button>
+      </div>
     </header>
     <!-- End of Header -->
 
     
     <!-- Container -->
-    <div class="container centerText centerObject">
-      <!-- Instructions -->
+    <div class="container centerText centerObject background-image-fixed white">
+      <!-- Intro -->
+      <div id="about">
+        <img src="/images/logo_kindred.png" alt="logo kindred" class="logoLarge spaceAround">
+        <p class="subheading fontSpecialElite">Who are we?</p>
+        <div class="maxText centerObject fontMillGoudy spaceAround">
+            <p>Here at Kindred we believe in two things:</p>
+            <p>Firstly, <span class="uppercase">everyone</span> deserves to have a great night out without having to sacrifice on food and beverage.</p>
+            <p>Secondly, this even applies if you're <span class="uppercase italic">vegan</span>.</p>
+        </div>
+        <div class="background-image1 grayHalf">
+            <div class="fontSpecialElite spaceInside">
+                <p class="fontLarge fontShadow">100% Vegan Friendly</p>
+                <br/><br/>
+                <p class="fontLarge fontShadow">100% Delicious</p>
+            </div>
+        </div>
+      </div>
+      <!-- End of Intro -->
+
+      <!-- Why -->
       <div>
-          <p class="subheading">How to use this document:</p>
-          <p class="maxText centerObject">Use this page as a reference. All available classes are used here. Copy and paste the class names into the class section of an element's opening tag.</p>
-          <div class="spaceAround">
-            <p>Example Code:</p>
-            <div class="description">
-                <code>
-                    <p>&lt;p class="fontLobster fontMedium red"&gt;Hello World!&lt;/p&gt;</p>
-                </code>
+        <div>
+            <img src="/images/logo_kindred.png" alt="logo kindred" class="logoLarge spaceAround">
+            <p class="subheading fontSpecialElite">Who are we?</p>
+            <div class="maxText centerObject fontMillGoudy spaceAround">
+                <p>If you've recently noticed a big crowd gathering on the corner of 30th and Beech Street in South Park it's probably because of Kindred. Our neighborhood restaurant and bar just celebrated our first year and we hope there are many more to come!</p>
+                <p>Not only do we serve tasty food and drinks, our restaurant is breathtaking. A 35-foot marble bar dominates most of the room, while a four-eyed wolf head sculpture with snakes for horns hangs along the wall.</p>
+                <p>Over the top? Maybe. Awesome as heck. You bet your butt.</p>
             </div>
-            <P>Results:</P>
-            <p class="fontMedium fontLobster red">Hello World!</p>
-            <p class="italic maxText centerObject">If you can't figure out the class. Right click to select and use your browser's "Inspect" mode to target an element and view it's relevant classes.</p>
-          </div>
-      </div>
-      <!-- End of Instructions -->
-
-      <!-- Fonts -->
-      <div id="fonts">
-        <!-- Font Sizes -->
-        <div class="spaceAround bgLightGray">
-            <p class="fontMedium uppercase underline">Font Sizes</p>
-            <div>
-                <p>Default Font Size</p>
-                <p class="heading">Heading</p>
-                <p class="subheading">Subheading</p>
-                <p class="fontXLarge">fontXLarge</p>
-                <p class="fontLarge">fontLarge</p>
-                <p class="fontMedium">fontMedium</p>
-                <p class="fontSmall">fontSmall</p>
-                <p class="fontXSmall">fontXSmall</p>
+            <div class="background-image2 grayScale">
+                <div class="fontLobster spaceInside">
+                    <p class="fontLarge fontShadow">Come join us Fourth of July Weekend!</p>
+                    <br/><br/>
+                    <p class="fontLarge fontShadow">As we get super patriotic ...</p>
+                    <br/><br/>
+                    <p class="fontLarge fontShadow">And just a little bit weird.</p>
+                </div>
             </div>
         </div>
-        <!-- End of Font Sizes -->
-          
-        <!-- Font Families -->
-        <div class="spaceAround">
-            <p class="fontMedium uppercase underline">Font Families</p>
-            <div>
-                <p>Default Font Family</p>
-                <p class="fontMeddon">fontMeddon</p>
-                <p class="fontSpecialElite">fontSpecialElite</p>
-                <p class="fontOxygen">fontOxygen</p>
-                <p class="fontLobster">fontLobster</p>
-                <p class="fontMillGoudy">fontMillGoudy</p>
-                <p class="fontMontserrat">fontMontserrat</p>
-                <p class="fontPacifico">fontPacifico</p>
-                <p class="fontRoboto">fontRoboto</p>
-                <p class="fontRanga">fontRanga</p>
-                <p class="fontOpenSans">fontOpenSans</p>
-            </div>
-        </div>
-        <!-- End of Font Families -->
-
-        <!-- Font Decorations -->
-        <div class="spaceAround bgLightGray">
-            <p class="fontMedium uppercase underline">Font Decorations</p>
-            <div>
-              <div class="spaceAround">
-                <p>Use class="capitalize"</p>
-                <p class="capitalize">to capitalize the first letter of each word.</p>
-              </div>
-              <div class="spaceAround">
-                <p>Use class="uppercase"</p>
-                <p class="uppercase">to capitalize every letter.</p>
-              </div>
-              <div class="spaceAround">
-                <p>Use class="lowercase"</p>
-                <p class="lowercase">To Make Every Letter LOWERCASE.</p></div>
-              <div class="spaceAround">
-                <p>Use class="bold"</p>
-                <p class="bold">to bold the text.</p></div>
-              <div class="spaceAround">
-                <p>Use class="italic"</p>
-                <p class="italic">to italicize the text.</p></div>
-              <div class="spaceAround">
-                <p>Use class="underline"</p>
-                <p class="underline">to underline the text.</p>
-              </div>
-          </div>
-        <!-- End of Font Decorations -->
-        </div>
-      </div>
-      <hr>
-      <!-- End of Fonts -->
+    <!-- End of Why -->
       
       <!-- Colors -->
       <div id="colors">
@@ -285,22 +251,22 @@
           <tr>
               <td>Peter</td>
               <td>Griffin</td>
-              <td>$100</td>
+              <td>100</td>
           </tr>
           <tr class="bgPurple">
               <td>Lois</td>
               <td>Griffin</td>
-              <td>$150</td>
+              <td>150</td>
           </tr>
           <tr>
               <td>Joe</td>
               <td>Swanson</td>
-              <td>$300</td>
+              <td>300</td>
           </tr>
           <tr class="bgPurple">
               <td>Cleveland</td>
               <td>Brown</td>
-              <td>$250</td>
+              <td>250</td>
           </tr>
           </table>
         </div>

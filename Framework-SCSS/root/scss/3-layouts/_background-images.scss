@@ -19,3 +19,10 @@
     background: url(./../images/bg_dark.jpg) fixed;
     background-size: cover;
 }
+
+.bgCasual {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9),transparent), url(./../images/pizzabanner.jpg)bottom no-repeat;
+    background-size: cover;
+}

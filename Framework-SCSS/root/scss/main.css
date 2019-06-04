@@ -235,6 +235,10 @@ p {
   color: crimson;
 }
 
+.tomato {
+  color: tomato;
+}
+
 .black {
   color: black;
 }
@@ -977,6 +981,14 @@ h2 {
 
 .background-image-fixed {
   background: url(./../images/bg_dark.jpg) fixed;
+  background-size: cover;
+}
+
+.bgCasual {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(transparent)), url(./../images/pizzabanner.jpg) bottom no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent), url(./../images/pizzabanner.jpg) bottom no-repeat;
   background-size: cover;
 }
 
